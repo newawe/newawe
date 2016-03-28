@@ -1,4 +1,4 @@
-<?php $pageName = "Newawe"; include('/start.php'); ?>
+<?php $pageName = "Newawe"; include('start.php'); ?>
       <ul class="TOP" id='indul'>
         <li><img src='PNG.png' width="50px"></li>
         <li class='hs'><a href="login.html">Login</a></li>
@@ -13,4 +13,4 @@
         <p>Share Your Code. With the World.</p>
         <img src="http://bjskistad.github.io/newawe/images/Welcome.jpg" width="50%">
       </div>
-<?php include('/end.php'); ?>
+<?php include('end.php'); ?>
