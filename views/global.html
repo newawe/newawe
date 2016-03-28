@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {{ site-title }}
+    </title>
+    <link rel="stylesheet" href="/main.css"/>
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <style>
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border-style: solid;
+            position: relative;
+            top: 5%;
+        }
+
+        li {
+            float: left;
+            padding: 5%;
+            margin-bottom: -5%;
+            margin-top: -5%;
+
+        }
+
+        .hs {
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+<!--<header class="title">
+  <div class="titleDiv">y
+    <h1>
+      {{ site-title }}
+    </h1>
+  </div>
+  <div class="contact">
+    <h2>
+      <a href="/contact.php">
+        Contact
+      </a>
+    </h2>
+  </div>
+</header>-->
+<ul class="TOP" id='indul'>
+    <li><img src='PNG.png' width="50px"></li>
+    <li class='hs'><a href="?p=login">Login</a></li>
+    <li class='hs'><a href="http://newawe.gwiddle.co.uk/Fourm/">Forums</a></li>
+    <li class='hs'><a href="?p=contact">Contact</a></li>
+    <li class='hs'><a href="#">Create</a></li>
+</ul>
+<div class="w3-container" style="background-color:#00A3C6;">
+    <h1>Newawe</h1>
+</div>
+<section class="content">
+    {{ content }}
+</section>
+</body>
+</html>
