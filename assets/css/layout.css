@@ -1,0 +1,46 @@
+/*todo: add breakpoints to make nav more responsive*/
+nav {
+    background: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+nav ul li img {
+    height: 100%;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+
+    color: black;
+    height: 50px;
+    line-height: 50px;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+nav a {
+    display: inline-block;
+
+    padding: 0 10px;
+    height: 100%;
+}
+
+body header {
+    background: #00A3C6;
+    padding: 20px;
+    text-align: center;
+}
+
+/*todo: add breakpoints to make container more responsive*/
+.container {
+    padding: 0 20px;
+}
