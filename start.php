@@ -14,7 +14,7 @@ Start content of every pages, use include('/start.php'); or include_once('/start
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   </head>
   <body>
-    <header class="title">
+    <!--<header class="title">
       <div class="titleDiv">
         <h1>
           <?php echo $pageName; ?>
@@ -27,7 +27,7 @@ Start content of every pages, use include('/start.php'); or include_once('/start
           </a>
         </h2>
       </div>
-    </header>
+    </header>-->
     <section class="content">
       <?php /*
 
