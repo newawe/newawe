@@ -3,6 +3,7 @@
 Start content of every pages, use include('/start.php'); or include_once('/start.php');
 
 */?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>
