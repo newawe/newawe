@@ -10,6 +10,7 @@ Start content of every pages, use include('/start.php'); or include_once('/start
       <?php echo $pageName; ?>
     </title>
     <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" type="image/png" href="Favicon.png">
   </head>
   <body>
     <header class="title">
