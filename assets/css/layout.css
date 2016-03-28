@@ -1,3 +1,4 @@
+/*todo: add breakpoints to make nav more responsive*/
 nav {
     background: white;
 }
@@ -37,4 +38,9 @@ body header {
     background: #00A3C6;
     padding: 20px;
     text-align: center;
+}
+
+/*todo: add breakpoints to make container more responsive*/
+.container {
+    padding: 0 20px;
 }
