@@ -27,9 +27,9 @@ class Newawe
 
     public function render()
     {
-        $view = new view($this->page, [
+        $view = new view($this->page, array(
             "site-title" => "Newawe"
-        ]);
+        ));
 
         return $view->render();
     }
