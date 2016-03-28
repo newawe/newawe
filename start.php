@@ -11,6 +11,7 @@ Start content of every pages, use include('/start.php'); or include_once('/start
     </title>
     <link rel="stylesheet" href="/main.css" />
     <link rel="icon" type="image/png" href="Favicon.png">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   </head>
   <body>
     <header class="title">
