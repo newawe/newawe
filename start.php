@@ -9,8 +9,8 @@ Start content of every pages, use include('/start.php'); or include_once('/start
     <title>
       <?php echo $pageName; ?>
     </title>
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/png" href="Favicon.png">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" type="image/png" href="assets/images/Favicon.png">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   </head>
   <body>
