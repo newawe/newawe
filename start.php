@@ -15,9 +15,18 @@ Start content of every pages, use include('/start.php'); or include_once('/start
   </head>
   <body>
     <header class="title">
-      <h1>
-        <?php echo $pageName; ?>
-      </h1>
+      <div class="titleDiv">
+        <h1>
+          <?php echo $pageName; ?>
+        </h1>
+      </div>
+      <div class="contact">
+        <h2>
+          <a href="/contact.php">
+            Contact
+          </a>
+        </h2>
+      </div>
     </header>
     <section class="content">
       <?php /*
