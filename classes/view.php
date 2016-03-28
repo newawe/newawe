@@ -9,9 +9,9 @@
 class view
 {
     private $page = "index";
-    private $vars = [];
+    private $vars = array();
 
-    public function __construct($page, $vars = [])
+    public function __construct($page, $vars = array())
     {
         $this->page = $page;
 
