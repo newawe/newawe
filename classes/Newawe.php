@@ -28,7 +28,8 @@ class Newawe
     public function render()
     {
         $view = new view($this->page, [
-            "site-title" => "Newawe"
+            "site-title" => "Newawe",
+            "page-title" => ucfirst($this->page) // Capitalize page title
         ]);
 
         return $view->render();
