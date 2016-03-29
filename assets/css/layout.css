@@ -34,7 +34,7 @@ nav .nav-link {
     height: 100%;
 }
 
-body header {
+body > header {
     background: #00A3C6;
     padding: 20px;
     text-align: center;
@@ -42,5 +42,5 @@ body header {
 
 /*todo: add breakpoints to make container more responsive*/
 .container {
-    padding: 0 20px;
+    padding: 20px;
 }
