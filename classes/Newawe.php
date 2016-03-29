@@ -33,6 +33,4 @@ class Newawe
 
         return $view->render();
     }
-
-
 }
