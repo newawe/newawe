@@ -12,7 +12,6 @@ class Newawe
 
     public function __construct()
     {
-
     }
 
     public function setPage($page)
