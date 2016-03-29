@@ -9,10 +9,12 @@
 class Newawe
 {
     private $page = "index";
+    private $mysqli = null;
 
-    public function __construct()
+
+    public function __construct($mysqli)
     {
-
+        $this->mysqli = $mysqli;
     }
 
     public function setPage($page)
