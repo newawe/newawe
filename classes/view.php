@@ -6,7 +6,7 @@
  * Date: 3/28/16
  * Time: 7:49 PM
  */
-class view
+class View
 {
     private $page = "index";
     private $vars = [];
