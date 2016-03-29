@@ -18,7 +18,6 @@ class view
         if ($page == "global")
             $this->page = "index";
 
-
         $this->vars = $vars;
     }
 
@@ -30,7 +29,6 @@ class view
             $file = __DIR__ . "/../views/pages/$template.html";
         }
 
-
         $work = file_get_contents($file);
 
         foreach ($this->vars as $var => $value) {
@@ -40,6 +38,5 @@ class view
             $work = str_replace("{{ content }}", $this->render($this->page), $work);
         }
         return $work;
-
     }
 }
