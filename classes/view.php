@@ -13,7 +13,7 @@ class view
 
     public function __construct($page, $vars = [])
     {
-        $this->page = $page;
+        $this->page = str_replace([".","/","'",'"'],"",$page);
 
         if ($page == "global")
             $this->page = "index";
@@ -29,6 +29,7 @@ class view
         } else {
             $file = __DIR__ . "/../views/pages/$template.html";
         }
+
 
         $work = file_get_contents($file);
 
