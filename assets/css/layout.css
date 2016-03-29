@@ -27,7 +27,7 @@ nav ul li {
 
 }
 
-nav a {
+nav .nav-link {
     display: inline-block;
 
     padding: 0 10px;
