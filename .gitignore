@@ -2,3 +2,5 @@
 .project
 .buildpath
 .settings
+# IntelliJ IDEA files
+.idea
