@@ -31,7 +31,8 @@ class Newawe
     {
         $view = new view($this->page, [
             "site-title" => "Newawe",
-            "page-title" => ucfirst($this->page) // Capitalize page title
+            "page-title" => ucfirst($this->page), // Capitalize page title
+            "loggedin-text" => isset($_SESSION['username'])? "Welcome back {$_SESSION['username']}!" : "Not logged in"
         ]);
 
         return $view->render();

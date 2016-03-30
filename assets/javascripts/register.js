@@ -20,3 +20,12 @@ $('#login-button').addEventListener('click', function(event) {
        }
    })
 });
+
+$('#register-button').addEventListener('click', function (event) {
+    event.preventDefault();
+    PostAjax('ajax/actions/register.php', "username=" + $('#username').value + "&password=" + $('#password').value+"&email="+ $('#email').value+"&country="+ $('#country').value, function (data) {
+        if (data.error == undefined) {
+            window.location = "?p=home";
+        }
+    })
+});
