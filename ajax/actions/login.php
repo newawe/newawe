@@ -23,7 +23,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         $data = ["error" => ["code" => 4, "message" => "Username or password incorrect"]];
     }
 } else {
-    $data = ["error" => ["code" => 3, "message" => "Please fill out the form completely"],"input" => $_POST];
+    $data = ["error" => ["code" => 3, "message" => "Please fill out the form completely"]];
 }
 
 include "../index.php";
