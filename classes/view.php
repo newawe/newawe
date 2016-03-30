@@ -24,7 +24,7 @@ class View
 
     public function render($template = "global")
     {
-        if ($template == "global") {
+        if($template == "global") {
             $file = __DIR__."/../views/global.html";
         } else {
             $file = __DIR__ . "/../views/pages/$template.html";
@@ -32,10 +32,10 @@ class View
 
         $work = file_get_contents($file);
 
-        foreach ($this->vars as $var => $value) {
+        foreach($this->vars as $var => $value) {
             $work = str_replace("{{ $var }}", $value, $work);
         }
-        if ($template == "global") {
+        if($template == "global") {
             $work = str_replace("{{ content }}", $this->render($this->page), $work);
         }
         return $work;
