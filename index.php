@@ -12,6 +12,12 @@ $DbConf = require __DIR__."/configs/mysql.php";
 // Setup mysql connection
 $mysqli = new mysqli($DbConf['host'], $DbConf['user'], $DbConf['password'], $DbConf['database']);
 
+<<<<<<< HEAD
 $newawe = new Newawe($mysqli);
 $newawe->setPage(isset($_GET['p']) ? $_GET['p'] : "home");
 echo $newawe->render();
+=======
+$newawe = new Newawe();
+$newawe->setPage(isset($_GET['p']) ? $_GET['p'] : "home");
+echo $newawe->render();
+>>>>>>> master
