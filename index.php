@@ -1,4 +1,7 @@
 <?php
+
+define('SRV_ROOT', dirname(__FILE__));
+
 require __DIR__ . "/classes/Newawe.php";
 require __DIR__ . "/classes/view.php";
 
