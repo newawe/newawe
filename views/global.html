@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
         <title>{{ site-title }}</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/layout.css">
         <link rel="stylesheet" href="assets/css/utils.css">
         <link rel="icon" type="image/png" href="assets/images/Favicon.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="?p=home"><img src="assets/images/PNG.png" width="50px"></a></li>
-                <li><a class="nav-link" href="?p=home">Home</a></li>
+                <li><a href="?p=index"><img src='assets/images/PNG.png' width="50px"></a></li>
+                <li><a class="nav-link" href="?p=index">Home</a></li>
                 <li><a class="nav-link" href="?p=login">Login</a></li>
                 <li><a class="nav-link" href="http://newawe.gwiddle.co.uk/Fourm/">Forums</a></li>
                 <li><a class="nav-link" href="?p=contact">Contact</a></li>
@@ -24,16 +26,11 @@
             <h1>{{ page-title }}</h1>
         </header>
         <main class="container">
-            <noscript class="box danger">
-                <h3>Warning</h3>
-                Sorry, this site will not be fully functional without
-                <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a>
-                enabled.<br>
-                See
-                <a href="http://enable-javascript.com/" target="_blank">enable-javascript.com</a>
-                for more information.
-            </noscript>
             {{ content }}
         </main>
+
+
+        <script src="assets/javascripts/utils.js"></script>
+        <script src="assets/javascripts/register.js"></script>
     </body>
 </html>

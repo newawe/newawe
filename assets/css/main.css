@@ -8,7 +8,7 @@ html, body {
     padding: 0;
 }
 
-nav > ul > li > a {
+a {
     color: black;
     text-decoration: none;
 }
@@ -37,23 +37,10 @@ input[type=password], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=submit] {
-    width: 100%;
-    background-color: #00a3c6;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-input[type=submit]:hover {
-    background-color: #0088a3;
-}
 button[type=submit] {
     width: 100%;
-    background-color: #00a3c6;
+    background-color: #00A3C6;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -64,28 +51,4 @@ button[type=submit] {
 
 button[type=submit]:hover {
     background-color: #0088a3;
-}
-
-noscript {
-    width: 100%;
-}
-
-.box {
-    border-radius: 10px;
-    padding: 0.6em;
-    display: block;
-}
-
-.danger {
-    background-color: #f44336;
-    color: #fff;
-}
-
-.danger a {
-    color: #a0c8e8;
-    text-decoration: none;
-}
-
-#welcome-image {
-	max-width: 100%;
 }

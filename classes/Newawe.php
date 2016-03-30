@@ -9,9 +9,12 @@
 class Newawe
 {
     private $page = "index";
+    private $mysqli = null;
 
-    public function __construct()
+
+    public function __construct($mysqli)
     {
+        $this->mysqli = $mysqli;
     }
 
     public function setPage($page)
@@ -26,11 +29,13 @@ class Newawe
 
     public function render()
     {
-        $view = new View($this->page, [
+        $view = new view($this->page, [
             "site-title" => "Newawe",
             "page-title" => ucfirst($this->page) // Capitalize page title
         ]);
 
         return $view->render();
     }
+
+
 }
