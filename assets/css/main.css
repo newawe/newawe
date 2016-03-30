@@ -36,6 +36,7 @@ input[type=submit], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #00A3C6;
 }
 
 input[type=password], select {
