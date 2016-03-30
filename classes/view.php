@@ -16,7 +16,7 @@ class View
         $this->page = str_replace([".","/","'",'"'],"",$page);
 
         if ($page == "global")
-            $this->page = "index";
+            $this->page = "home";
 
         $this->vars = $vars;
     }
