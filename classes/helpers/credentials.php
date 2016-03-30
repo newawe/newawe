@@ -8,11 +8,13 @@
  */
 class credentials
 {
-    public $mysqli;
-
-    public function idExist($id, $mysql = null)
+    /**
+     * @param $id int Player id
+     * @param $mysql mysqli
+     * @return bool if player id exists
+     */
+    public static function idExist($id, $mysql)
     {
-        ($mysql === null) ?: $mysql = $this->mysqli;
         /* create a prepared statement */
         $stmt = $mysql->stmt_init();
         if ($stmt->prepare("SELECT count(*) FROM nw_users WHERE row_id=? limit 1")) {
@@ -27,9 +29,13 @@ class credentials
         return false;
     }
 
-    public function userExist($username, $mysql = null)
+    /**
+     * @param $username string Player username
+     * @param $mysql    mysqli
+     * @return bool if username exists
+     */
+    public static function userExist($username, $mysql)
     {
-        ($mysql === null) ?: $mysql = $this->mysqli;
         /* create a prepared statement */
         $stmt = $mysql->stmt_init();
         if ($stmt->prepare("SELECT count(*) FROM nw_users WHERE username=? limit 1")) {
@@ -44,16 +50,37 @@ class credentials
         return false;
     }
 
-    public function getPasswordHash($id, $mysql = null)
+    /**
+     * @param $id int|string user id or username
+     * @param $password string password to verify
+     * @param $mysql mysqli
+     * @return bool if password is correct
+     */
+    public static function checkPassword($id,$password, $mysql)
     {
-        ($mysql === null) ?: $mysql = $this->mysqli;
-        if (is_int($id)){
-            return $this->getPasswordHashId($id, $mysql);
-        }
-        return $this->getPasswordHashUser($id, $mysql);
+        $hash = self::getPasswordHash($id,$mysql);
+        return PasswordHash::verify($password,$hash);
     }
 
-    private function getPasswordHashId($id, $mysql)
+    /**
+     * @param $id int|string user id or username
+     * @param $mysql
+     * @return bool|string
+     */
+    public static function getPasswordHash($id, $mysql)
+    {
+        if (is_int($id)){
+            return self::getPasswordHashId($id, $mysql);
+        }
+        return self::getPasswordHashUser($id, $mysql);
+    }
+
+    /**
+     * @param $id int user id
+     * @param $mysql
+     * @return bool|string
+     */
+    private static function getPasswordHashId($id, $mysql)
     {
         /* create a prepared statement */
         $stmt = $mysql->stmt_init();
@@ -69,7 +96,12 @@ class credentials
         return false;
     }
 
-    private function getPasswordHashUser($username, $mysql)
+    /**
+     * @param $username string username
+     * @param $mysql mysqli
+     * @return bool|string
+     */
+    private static function getPasswordHashUser($username, $mysql)
     {
         /* create a prepared statement */
         $stmt = $mysql->stmt_init();

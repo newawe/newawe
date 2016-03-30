@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . "/classes/Newawe.php";
 require __DIR__ . "/classes/view.php";
+require __DIR__ . "/classes/helpers/hash.php";
+require __DIR__ . "/classes/helpers/credentials.php";
 
 $DbConf = require __DIR__."/configs/mysql.php";
 
