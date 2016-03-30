@@ -66,13 +66,26 @@ button[type=submit]:hover {
     background-color: #0088a3;
 }
 
-div.nojs {
-    border-radius: 10px;
-    color: #fff;
-    background-color: #f44336;
-    padding: 0.6em;
+noscript {
+    width: 100%;
 }
 
-img#welcome-image {
+.box {
+    border-radius: 10px;
+    padding: 0.6em;
+    display: block;
+}
+
+.danger {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.danger a {
+    color: #a0c8e8;
+    text-decoration: none;
+}
+
+#welcome-image {
 	max-width: 100%;
 }

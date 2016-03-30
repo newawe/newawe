@@ -24,18 +24,14 @@
             <h1>{{ page-title }}</h1>
         </header>
         <main class="container">
-            <noscript>
-                <div class="nojs">
-                    <h3>Warning</h3>
-                    <p>
-                        Sorry, this site will not be fully functional without
-                        <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a>
-                        enabled.<br>
-                        See
-                        <a href="http://enable-javascript.com/" target="_blank">enable-javascript.com</a>
-                        for more information.
-                    </p>
-                </div>
+            <noscript class="box danger">
+                <h3>Warning</h3>
+                Sorry, this site will not be fully functional without
+                <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a>
+                enabled.<br>
+                See
+                <a href="http://enable-javascript.com/" target="_blank">enable-javascript.com</a>
+                for more information.
             </noscript>
             {{ content }}
         </main>
