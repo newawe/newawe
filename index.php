@@ -8,7 +8,7 @@ ini_set('session.save_handler', 'sqlite');
 ini_set('session.name', 'NEWAWESESSIONID');
 ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 7);
 ini_set('session.cookie_lifetime', 60 * 60 * 24 * 7);
-include SRV_ROOT . '/config/bootstrap.php'; //get bootstrap
+include SRV_ROOT . '/bootstrap.php'; //get bootstrap
 if (in_array($dirs[1], $disallowed_dirs)) {
     header('HTTP/1.1 404 Not found');
     include SRV_ROOT . '/errorpages/404.php';
