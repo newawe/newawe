@@ -39,7 +39,7 @@ input[type=password], select {
 }
 input[type=submit] {
     width: 100%;
-    background-color: #00A3C6;
+    background-color: #00a3c6;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -53,7 +53,7 @@ input[type=submit]:hover {
 }
 button[type=submit] {
     width: 100%;
-    background-color: #00A3C6;
+    background-color: #00a3c6;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
