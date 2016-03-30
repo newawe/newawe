@@ -116,4 +116,25 @@ class credentials
         }
         return false;
     }
+
+    /**
+     * @param $username string Username
+     * @param $mysql mysqli
+     * @return bool|int
+     */
+    public static function getIdFromUser($username, $mysql)
+    {
+        /* create a prepared statement */
+        $stmt = $mysql->stmt_init();
+        if ($stmt->prepare("SELECT row_id FROM nw_users WHERE username=? limit 1")) {
+            $stmt->bind_param("s", $username);
+            $stmt->execute();
+            $id = null;
+            $stmt->bind_result($id);
+            $stmt->fetch();
+            $stmt->close();
+            return $id;
+        }
+        return false;
+    }
 }

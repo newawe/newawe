@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require __DIR__ . "/../../classes/helpers/hash.php";
 require __DIR__ . "/../../classes/helpers/credentials.php";
 
