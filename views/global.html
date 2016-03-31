@@ -13,24 +13,52 @@
     </head>
     <body>
         <nav>
-            <ul>
-                <li><a href="?p=home"><img src='assets/images/PNG.png' width="50px"></a></li>
-                <li><a class="nav-link" href="?p=home">Home</a></li>
-                <li><a class="nav-link" href="?p=login">Login</a></li>
-                <li><a class="nav-link" href="http://newawe.gwiddle.co.uk/Fourm/">Forums</a></li>
-                <li><a class="nav-link" href="?p=contact">Contact</a></li>
-                <li><a class="nav-link" href="#">Create</a></li>
-            </ul>
+            <header><ul class="left">
+			<li><a href="/assets?p=home">Home</a></li>
+			<li><a href="/assets?p=login">Sign in</a></li>
+			<li><a href="/Fourm">Forums</a></li>
+			<li ><a href="/assets?p=contact">Contact</a></li>
+			<script>document.write('<li class = "last"><a href="javascript:createButton()">Create</a></li>');</script>
+			 </header>
         </nav>
         <header>
             <h1>{{ page-title }}</h1>
         </header>
         <main class="container">
-            {{ content }}
+            <div style=
+"border:1px solid #E0E0E0;
+-webkit-border-radius:10px 10px 0 0;
+border-radius:10px 10px 0 0;
+box-shadow:0 2px 3px rgba(34, 25, 25, 0.5);
+margin:0px 0px 10px 0px;
+padding:0px;background-color:#FFFFFF;
+width:100%;
+height:1000px;
+overflow:hidden;
+float:;
+">
+<div style=
+"height:20px;
+padding:7px 7px;
+position:relative;
+background-color:#F7F7F7;font-size:1.5em;
+text-align:center;
+border-bottom:1px solid rgb(224, 224, 224);
+"> {{ page-title }} 
+</div><div style="padding:5px"><!--
+--> {{ content }}
+</div></div>
+
+           
         </main>
 
 
         <script src="assets/javascripts/utils.js"></script>
         <script src="assets/javascripts/register.js"></script>
+        <script>function createButton()
+        {
+        alert ("Unfortunately, this feature is not available yet")
+        }
+        </script>
     </body>
 </html>
