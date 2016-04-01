@@ -10,9 +10,6 @@
         <input type="submit" value="Send!" />
     </form>
 </noscript>
-<div class="editor" id="editor" style="hidden">
+<div class="editor" id="editor" style="visibility: hidden;" onload="this.style.visibility = 'visible'">
     {{ file-editor }}
 </div>
-<script>
-    document.getElementById('editor').style.display = 'block';
-</script>
