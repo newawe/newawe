@@ -4,3 +4,5 @@
 .settings
 # IntelliJ IDEA files
 .idea
+# Apache configuration
+.htaccess
