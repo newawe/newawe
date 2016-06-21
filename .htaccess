@@ -1,1 +1,7 @@
 ErrorDocument 404 http://dev.newawe.com/?p=404
+AuthType Basic
+AuthName "Restricted Files"
+# (Following line optional)
+AuthBasicProvider file
+AuthUserFile "/home/herohampYT/web/dev.newawe.com/private/newawe"
+Require user newawe
