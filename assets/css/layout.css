@@ -26,6 +26,9 @@ nav ul li {
     padding: 0;
 
 }
+nav ul li:hover {
+    color: #00B0D0;
+}
 
 nav .nav-link {
     display: inline-block;
@@ -38,6 +41,7 @@ body > header {
     background: #00A3C6;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 0 5px #000000;
 }
 
 /*todo: add breakpoints to make container more responsive*/
