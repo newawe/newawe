@@ -25,7 +25,7 @@ class view
 
     public function render($template = "global")
     {
-         include "/../configs/pages.php";
+         include "./configs/pages.php";
         if ($template == "global") {
             $file = __DIR__."/../views/global.html";
         } else {
