@@ -14,3 +14,5 @@ $mysqli = new mysqli($DbConf['host'], $DbConf['user'], $DbConf['password'], $DbC
 $newawe = new Newawe($mysqli);
 $newawe->setPage(isset($_GET['p']) ? $_GET['p'] : "home");
 echo $newawe->render();
+?>
+<script src="https://www.savenetneutrality.eu/widget.js"></script>
