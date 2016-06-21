@@ -6,9 +6,7 @@
  * Date: 3/28/16
  * Time: 7:49 PM
  */
- 
-$pages = array("contact","create","home","credits","issue","login","signup");
- 
+
 class view
 {
     private $page = "index";
@@ -27,13 +25,14 @@ class view
 
     public function render($template = "global")
     {
+         include "/../configs/pages.php";
         if ($template == "global") {
             $file = __DIR__."/../views/global.html";
         } else {
-            if (in_array($template, $pages)) {
+           if (in_array($template, $pages)) {
                 $file = __DIR__ . "/../views/pages/$template.html";
             } else {
-	           $file = __DIR__ . "/../views/pages/404.html";
+               $file = __DIR__ . "/../views/pages/404.html";
             }
         }
 
