@@ -3,11 +3,14 @@
     var text = document.getElementById('404funny');
     text.innerHTML = "&lt;_&lt;";
     
-    function stepTwo() {
-      var i = 10;
-      while(i>0){
-        i=i-1;
-        text.style.opacity = 
-      }
+    function stepTwo(){
+      text.innerHTML = "&gt;_&gt;"
     }
+    function stepThree(){
+      text.innerHTML = "We don't see that page anywhere."
+    }
+    
+    setTimeout(stepTwo,1500);
+    setTimeout(stepThree,3000);
+    //If anyone could make these fade in and out that would be cool, but otherwise this is what I've got.
   </script>
