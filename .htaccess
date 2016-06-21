@@ -1,4 +1,1 @@
-ErrorDocument 404 /views/pages/404.html
-RewriteEngine On
-RewriteBase /
-RewriteRule ^(.*)$ index.php
+ErrorDocument 404 http://dev.newawe.com/?p=404
