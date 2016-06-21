@@ -45,6 +45,7 @@ body > header {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 6px -2px #000000;
+  color: #FFFFFF;
 }
 
 /*todo: add breakpoints to make container more responsive*/
