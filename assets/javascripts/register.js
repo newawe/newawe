@@ -5,27 +5,27 @@
 ajax("ajax/actions/countries.php",function(data){
     var html = "";
     for (var i in data){
-        country = data[i];
-        html += '<option value="'+i+'">'+country+'</option>';
+        var country = data[i];
+        html += '<option value="'+i+'">'+country+"</option>";
     }
 
     $(".country-selector").innerHTML = html;
 });
 
-$('#login-button').addEventListener('click', function (event) {
+$("#login-button").addEventListener("click", function (event) {
     event.preventDefault();
-    PostAjax('ajax/actions/login.php', "username=" + $('#username').value + "&password=" + $('#password').value, function (data) {
+    PostAjax("ajax/actions/login.php", "username=" + $("#username").value + "&password=" + $("#password").value, function (data) {
         if (data.error == undefined) {
             window.location = "?p=home";
         }
-    })
+    });
 });
 
-$('#register-button').addEventListener('click', function (event) {
+$("#register-button").addEventListener("click", function (event) {
     event.preventDefault();
-    PostAjax('ajax/actions/login.php', "username=" + $('#username').value + "&password=" + $('#password').value + "&email=" + $('#email').value + "&email=" + $('#email').value, function (data) {
+    PostAjax("ajax/actions/login.php", "username=" + $("#username").value + "&password=" + $("#password").value + "&email=" + $("#email").value + "&email=" + $("#email").value, function (data) {
         if (data.error == undefined) {
             window.location = "?p=home";
         }
-    })
+    });
 });
