@@ -12,7 +12,7 @@ $mysqli = new mysqli($DbConf['host'], $DbConf['user'], $DbConf['password'], $DbC
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     if (credentials::userExist($_POST['username'], $mysqli)) {
-        if (credentials::checkPassword($_POST['username'],$_POST['password'],$mysqli)){
+        if (credentials::checkPassword($_POST['username'],$_POST['password'],$mysqli)) {
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['id'] = credentials::getIdFromUser($_POST['username'], $mysqli);
             $data = ['username'=>$_SESSION['username'], 'id'=> $_SESSION['id']];
