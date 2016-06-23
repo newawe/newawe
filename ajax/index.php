@@ -6,8 +6,6 @@ header('Content-Type: application/json');
 
 if (isset($data)) {
     echo json_encode($data);
-}
-else
-{
+} else {
     echo json_encode(["error"=>["code"=>1, "message"=>"Function not found"]]);
 }
