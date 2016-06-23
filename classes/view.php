@@ -16,9 +16,9 @@ class view
     {
         $this->page = str_replace([".","/","'",'"'],"",$page);
 
-        if ($page == "global")
+        if ($page == "global") {
             $this->page = "home";
-
+        }
 
         $this->vars = $vars;
     }

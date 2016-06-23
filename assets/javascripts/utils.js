@@ -21,4 +21,4 @@ function PostAjax(url, data, cb) {
     xhttp.open("post", url);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(encodeURI(data));
-}z
+}
