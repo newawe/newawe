@@ -18,7 +18,7 @@ class view
 
         if ($page == "global") {
             $this->page = "home";
-}
+        }
 
         $this->vars = $vars;
     }
