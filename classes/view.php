@@ -30,9 +30,9 @@ class view
             $file = __DIR__."/../views/global.html";
         } else {
            if (in_array($template, $pages)) {
-                $file = __DIR__ . "/../views/pages/$template.html";
+                $file = __DIR__ . "/../views/pages/$template.php";
             } else {
-               $file = __DIR__ . "/../views/pages/404.html";
+               $file = __DIR__ . "/../views/pages/404.php";
             }
         }
 
