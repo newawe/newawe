@@ -69,7 +69,7 @@ class credentials
      */
     public static function getPasswordHash($id, $mysql)
     {
-        if (is_int($id)){
+        if (is_int($id)) {
             return self::getPasswordHashId($id, $mysql);
         }
         return self::getPasswordHashUser($id, $mysql);
