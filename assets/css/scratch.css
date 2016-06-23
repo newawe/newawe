@@ -25,7 +25,7 @@ header \{\par
 \}\par
 \par
 \par
-a.scratch\{\tab\par
+.scratch\{\tab\par
 \tab float: left;\par
 \tab display: block;\par
 \tab width: 80px;\par
@@ -34,7 +34,7 @@ a.scratch\{\tab\par
 \tab text-indent: -99999em;\par
 \tab padding: 0 2px;\par
 \}\par
-a.scratch:hover\{\par
+.scratch:hover\{\par
 \tab background: url("scratchlogo_highlight.png") left center no-repeat;\par
 \}\par
 \par
@@ -63,7 +63,7 @@ header li a \{\par
 \par
 \}\par
 \par
-header li.last\{\par
+header .last\{\par
 \tab border-right: 1px solid #149acb;\par
 \}\par
 header li a,\par
@@ -504,4 +504,4 @@ ul#f-list \{\par
  +\tab line-height: 1.3;\par
  +\}\par
 }
- 
+�
