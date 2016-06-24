@@ -56,10 +56,10 @@ class credentials
      * @param $mysql mysqli
      * @return bool if password is correct
      */
-    public static function checkPassword($id,$password, $mysql)
+    public static function checkPassword($id, $password, $mysql)
     {
-        $hash = self::getPasswordHash($id,$mysql);
-        return PasswordHash::verify($password,$hash);
+        $hash = self::getPasswordHash($id, $mysql);
+        return PasswordHash::verify($password, $hash);
     }
 
     /**
