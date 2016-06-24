@@ -1,4 +1,4 @@
-function $(i) {return document.querySelector(i)} // Jquery in 48 bytes
+function $(i) {return document.querySelector(i);} // Jquery in 48 bytes
 
 function ajax(url,cb) {
     var xhttp = new XMLHttpRequest();
