@@ -29,13 +29,12 @@ class view
         if ($template == "global") {
             $file = __DIR__."/../views/global.html";
         } else {
-           if (in_array($template, $pages)) {
+            if (in_array($template, $pages)) {
                 $file = __DIR__ . "/../views/pages/$template.php";
             } else {
-               $file = __DIR__ . "/../views/pages/404.php";
+                $file = __DIR__ . "/../views/pages/404.php";
             }
         }
-
 
         $work = file_get_contents($file);
 
