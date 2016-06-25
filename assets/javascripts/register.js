@@ -15,7 +15,7 @@ ajax("ajax/actions/countries.php",function(data){
 $("#login-button").addEventListener("click", function (event) {
     event.preventDefault();
     PostAjax("ajax/actions/login.php", "username=" + $("#username").value + "&password=" + $("#password").value, function (data) {
-        if (data.error == undefined) {
+        if (data.error === undefined) {
             window.location = "?p=home";
         }
     });
@@ -24,7 +24,7 @@ $("#login-button").addEventListener("click", function (event) {
 $("#register-button").addEventListener("click", function (event) {
     event.preventDefault();
     PostAjax("ajax/actions/login.php", "username=" + $("#username").value + "&password=" + $("#password").value + "&email=" + $("#email").value + "&email=" + $("#email").value, function (data) {
-        if (data.error == undefined) {
+        if (data.error === undefined) {
             window.location = "?p=home";
         }
     });
