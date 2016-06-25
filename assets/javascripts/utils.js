@@ -3,7 +3,7 @@ function $(i) {return document.querySelector(i);} // Jquery in 48 bytes
 function ajax(url,cb) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
             cb(JSON.parse(xhttp.responseText));
         }
     };
@@ -14,7 +14,7 @@ function ajax(url,cb) {
 function PostAjax(url, data, cb) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
             cb(JSON.parse(xhttp.responseText));
         }
     };
