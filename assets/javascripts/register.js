@@ -6,7 +6,7 @@ ajax("ajax/actions/countries.php",function(data){
     var html = "";
     for (var i in data){
         var country = data[i];
-        html += '<option value="'+i+'">'+country+"</option>";
+        html += "<option value="+i+">"+country+"</option>";
     }
 
     $(".country-selector").innerHTML = html;
