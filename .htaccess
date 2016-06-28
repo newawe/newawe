@@ -1,4 +1,8 @@
 ErrorDocument 404 http://dev.newawe.com/?p=404
+
+
+Redirect 301 /contact index.php?p=contact
+
 AuthType Basic
 AuthName "Restricted Files"
 # (Following line optional)
