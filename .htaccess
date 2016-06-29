@@ -1,10 +1,4 @@
 ErrorDocument 404 http://dev.newawe.com/?p=404
-
-Options +FollowSymLinks
-RewriteEngine On
-RewriteBase /
-RewriteRule /home  /index.php?p=home
-
 AuthType Basic
 AuthName "Restricted Files"
 # (Following line optional)
