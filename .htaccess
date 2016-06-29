@@ -1,7 +1,8 @@
 ErrorDocument 404 http://dev.newawe.com/?p=404
 
 
-Alias /contact http://dev.newawe.com/?p=contact
+RewriteEngine  on
+RewriteRule    "/(.+)"  "http://dev.newawe.com/?p=$1"
 
 AuthType Basic
 AuthName "Restricted Files"
