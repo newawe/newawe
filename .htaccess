@@ -1,5 +1,10 @@
 ErrorDocument 404 http://dev.newawe.com/?p=404
 
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule /home  /home/herohampYT/web/dev.newawe.com/index.php?p=home [L,NC,QSA]
+
 AuthType Basic
 AuthName "Restricted Files"
 # (Following line optional)
