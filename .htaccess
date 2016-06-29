@@ -1,12 +1,5 @@
 ErrorDocument 404 http://dev.newawe.com/?p=404
 
-
-RewriteEngine  on
-RewriteRule    "/home"  "http://dev.newawe.com/?p=home" [PT]
-RewriteRule    "/login"  "http://dev.newawe.com/?p=login" [PT]
-RewriteRule    "/forums"  "http://dev.newawe.com/?p=forums" [PT]
-RewriteRule    "/contact"  "http://dev.newawe.com/?p=contact" [PT]
-
 AuthType Basic
 AuthName "Restricted Files"
 # (Following line optional)
