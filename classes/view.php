@@ -9,31 +9,27 @@
 
 class view
 {
-    private $page = "index";
     private $vars = [];
 
-    public function __construct($page, $vars = [])
+    public function __construct($vars = [])
     {
-        $this->page = str_replace([".","/","'",'"'],"",$page);
-
-        if ($page == "global") {
-            $this->page = "home";
-        }
-
         $this->vars = $vars;
     }
 
-    public function render($template = "global")
+    /**
+     * @param array $vars
+     */
+    public function setVars($vars)
     {
-         include "./configs/pages.php";
+        $this->vars = $vars;
+    }
+
+    public function render($template)
+    {
         if ($template == "global") {
             $file = __DIR__."/../views/global.html";
         } else {
-           if (in_array($template, $pages)) {
-                $file = __DIR__ . "/../views/pages/$template.php";
-            } else {
-               $file = __DIR__ . "/../views/pages/404.php";
-            }
+            $file = __DIR__ . "/../views/pages/$template.html";
         }
 
 
@@ -42,8 +38,8 @@ class view
         foreach ($this->vars as $var => $value) {
             $work = str_replace("{{ $var }}", $value, $work);
         }
-        if ($template == "global") {
-            $work = str_replace("{{ content }}", $this->render($this->page), $work);
+        if ($template != "global") {
+            $work = str_replace("{{ content }}", $this->render("global"), $work);
         }
         return $work;
 

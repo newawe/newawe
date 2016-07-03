@@ -11,10 +11,13 @@ class Newawe
     private $page = "index";
     private $mysqli = null;
 
+    public $router;
+
 
     public function __construct($mysqli)
     {
         $this->mysqli = $mysqli;
+        $this->router = new router();
     }
 
     public function setPage($page)
@@ -27,15 +30,9 @@ class Newawe
         return $this->page;
     }
 
-    public function render()
+    public function run()
     {
-        $view = new view($this->page, [
-            "site-title" => "Newawe",
-            "page-title" => ucfirst($this->page), // Capitalize page title
-            "loggedin" => isset($_SESSION['username'])? $_SESSION['username'] : "Not logged in"
-        ]);
-
-        return $view->render();
+        $this->router->execute($this->page);
     }
 
 
