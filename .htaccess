@@ -1,4 +1,4 @@
-ErrorDocument 404 http://dev.newawe.com/?p=404
+ErrorDocument 404 http://dev.newawe.com/404
 AuthType Basic
 AuthName "Restricted Files"
 # (Following line optional)
