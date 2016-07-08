@@ -5,3 +5,5 @@ AuthName "Restricted Files"
 AuthBasicProvider file
 AuthUserFile "/home/herohampYT/web/dev.newawe.com/private/newawe"
 Require user newawe
+RewriteEngine on 
+RewriteRule ^([A-Za-z0-9-]+)/?$ /?p=$1 [NC]
