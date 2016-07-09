@@ -14,3 +14,4 @@
     setTimeout(stepThree,3000);
     //If anyone could make these fade in and out that would be cool, but otherwise this is what I've got.
  </script>
+<noscript><p>We don't see that page anywhere.</p></noscript>
