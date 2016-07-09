@@ -6,4 +6,4 @@
     <button type="submit" id="login-button">Login</button>
 </form>
 </div>
-<span id="no-account">Don't Have an Account? <a href='?p=signup'>Sign Up</a>.</span>
+<span id="no-account">Don't Have an Account? <a href='/signup'>Sign Up</a>.</span>
