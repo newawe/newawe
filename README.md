@@ -13,6 +13,6 @@ Warning! Any code that you contribute to the newawe source is owned by newawe!
 
 TO-DO LIST:
 
-[ ] Add profile pages
-[ ] Add a moderation system
-[ ] Add a way for the forums/wiki to verify users.
+# [ ] Add profile pages
+# [ ] Add a moderation system
+# [ ] Add a way for the forums/wiki to verify users.
