@@ -13,7 +13,7 @@
         <select id="country" class="country-selector" name="country">
 
         </select>
-
+        <div class="g-recaptcha" data-sitekey="6LcOgSUTAAAAAECwyZJthl4OgPTDygWKt2YuEwis"></div>
         <button type="submit">Register</button>
     </form>
 </div>
