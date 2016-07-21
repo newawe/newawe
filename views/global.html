@@ -2,45 +2,66 @@
 <html style="overflow:hidden;height:100%;width:100%">
     <head>
         <title>{{ site-title }}</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/layout.css">
-        <link rel="stylesheet" href="./assets/css/utils.css">
-        <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href=
+        'https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel=
+        'stylesheet' type='text/css'>
+        <link href="./assets/css/main.css" rel="stylesheet">
+        <link href="./assets/css/layout.css" rel="stylesheet">
+        <link href="./assets/css/utils.css" rel="stylesheet">
+        <link href="assets/images/favicon.png" rel="icon" type="image/png">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
     </head>
     <body style="overflow:hidden;height:100%;width:100%">
         <nav>
             <ul>
-                <li><a href="?p=home"><img src='assets/images/image.png' width="50px" id="icon"></a></li>
-                <li><a class="nav-link" href="/home">Home</a></li>
-                <li><a class="nav-link" href="/login">Login</a></li>
-                <li><a class="nav-link" href="/forums">Forums</a></li>
-                <li><a class="nav-link" href="/contact">Contact</a></li>
-                <li><a class="nav-link" href="http://editor.newawe.com">Create</a></li>
+                <li>
+                    <a href="?p=home"><img id="icon" src='assets/images/image.png'
+                    width="50px"></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/forums">Forums</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="http://editor.newawe.com">Create</a>
+                </li>
             </ul>
         </nav>
         <header>
             <h1>{{ page-title }}</h1>
         </header>
-        <style>p.40footneonsign {
-        
-    color: orange;
-    text-align: center;
-font-family: "Times New Roman";
-    font-size: 20px;
-}</style>
-<script src="https://www.savenetneutrality.eu/widget.js"></script>
+        <style>
+            p.40footneonsign {
+                
+                color: orange;
+                text-align: center;
+                font-family: "Times New Roman";
+                font-size: 20px;
+            }
+        </style>
+        <script src="https://www.savenetneutrality.eu/widget.js">
+        </script>
         <main class="container" style="overflow:hidden;height:100%;width:100%">
-            <noscript><p class="40footneonsign">It may be nessessary to enable JavaScript for functionality. <a href="http://enable-javascript.com">Please check here for how to do so</a></a></p></noscript>
+            <noscript>
+                <p class="40footneonsign">It may be nessessary to enable JavaScript for
+                functionality. <a href="http://enable-javascript.com">Please check here
+                for how to do so</a></p>
+            </noscript> 
             {{ content }}
         </main>
-
-
-        <script src="assets/javascripts/utils.js"></script>
-        <script src="assets/javascripts/register.js"></script>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="assets/javascripts/utils.js">
+        </script> 
+        <script src="assets/javascripts/register.js">
+        </script> 
+        <script src='https://www.google.com/recaptcha/api.js'>
+        </script>
     </body>
 </html>
