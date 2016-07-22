@@ -9,7 +9,7 @@ When adding a new feature or fixing a bug, create a new branch/fork and implemen
 Never accept your own PR. Require at least one person to review your code. This is to avoid possible security faults and bad coding styles.
 
 
-Warning! Any code that you contribute to the newawe source is owned by newawe!
+Warning! Any code that you contribute to the Newawe source is owned by Newawe!
 
 TO-DO LIST:
 
