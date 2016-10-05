@@ -11,8 +11,8 @@ Never accept your own PR. Require at least one person to review your code. This 
 
 Warning! Any code that you contribute to the Newawe source is owned by Newawe!
 
-TO-DO LIST:
+##TO-DO LIST:
 
-# [ ] Add profile pages
-# [ ] Add a moderation system
-# [ ] Add a way for the forums/wiki to verify users.
+- [ ] Add profile pages
+- [ ] Add a moderation system
+- [ ] Add a way for the forums/wiki to verify users.
