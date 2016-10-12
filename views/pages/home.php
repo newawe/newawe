@@ -18,7 +18,7 @@
       document.getElementById("Show").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "http://toolserver.newawe.com/player", true);
+  xhttp.open("GET", "https://crossorigin.me/http://toolserver.newawe.com/player", true);
   xhttp.send();
 </script>
 </div>
