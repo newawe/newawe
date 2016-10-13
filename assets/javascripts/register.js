@@ -15,7 +15,7 @@ ajax("ajax/actions/countries.php", function(data){
 $("#register-button").addEventListener("click", function (event) {
     event.preventDefault();
     PostAjax("ajax/actions/login.php", "username=" + $("#username").value + "&password=" + $("#password").value + "&email=" + $("#email").value + "&email=" + $("#email").value, function (data) {
-        if (data.error === undefined) {
+        if (typeof data.error === "undefined") {
             window.location = "?p=home";
         }
     });
