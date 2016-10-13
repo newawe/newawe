@@ -8,3 +8,4 @@
 </form>
 </div>
 <span id="no-account">Don't Have an Account? <a href='/signup'>Sign Up</a>.</span>
+<script src="assets/javascripts/login.js"></script>

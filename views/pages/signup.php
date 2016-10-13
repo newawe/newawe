@@ -17,3 +17,4 @@
         <button type="submit">Register</button>
     </form>
 </div>
+<script src="assets/javascripts/register.js"></script>
