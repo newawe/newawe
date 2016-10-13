@@ -14,7 +14,7 @@
 
         </select>
         <div class="g-recaptcha" data-sitekey="6Ld3HwkUAAAAANjidQgzLOMgGQz7udFshwdM8aBX"></div>
-        <button type="submit">Register</button>
+        <button id="register-button" type="submit">Register</button>
     </form>
 </div>
 <script src="assets/javascripts/register.js"></script>
