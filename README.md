@@ -10,7 +10,7 @@ Never accept your own PR. Require at least one person to review your code. This 
 
 Please see our [CONTRIBUTING.md](https://github.com/Newawe/newawe/blob/master/CONTRIBUTING.md) document for information about contributing to Newawe.
 
-##TO-DO LIST:
+##To Do:
 
 - [ ] Add profile pages
 - [ ] Add a moderation system
